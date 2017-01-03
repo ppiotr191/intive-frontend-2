@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Score counter</title>
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <form class="score-counter-form">
+            <input name="number" class="add-form-input value" min=0 placeholder="Enter a start number" type="number" >
+            <input name="digits" class="add-form-input value" min=1 placeholder="Enter amount of digits" type="number" >
+            <button class="btn btn-success"><i class="fa fa-plus" aria-hidden="true"></i></button>
+        </form>
+        <div id="score-container">
+
+        </div>
+
+        <div class="score template">
+            <h1>Score: <span class="counter">0012</span></h1>
+            <form>
+                <button class="btn up">Up</button>
+                <button class="btn down">Down</button>
+                <button class="btn get">Get</button>
+                <input class="value" type="number">
+                <button class="btn set">Set</button>
+                <button class="btn reset">Reset</button>
+                <button class="btn btn-danger delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+            </form>
+        </div>
+
+        <script src="js/score-counter.js"></script>
+        <script src="js/score-ui.js"></script>
+        <script src="js/score-manager.js"></script>
+        <script>
+            var scoreManager = new ScoreManager(
+                document.querySelector(".score-counter-form"),
+                document.getElementById("score-container"),
+                document.querySelector(".score.template")
+            );
+
+            scoreManager.addElement(1, 0);
+            scoreManager.addElement(2, 10);
+            scoreManager.addElement(4, 100);
+
+            /*
+            var score1 = new ScoreUI(document.getElementById("score-1"), 1, 0);
+            var score2 = new ScoreUI(document.getElementById("score-2"), 2, 10);
+            var score3 = new ScoreUI(document.getElementById("score-3"), 4, 100);
+            */
+        </script>
+    </body>
+</html>
