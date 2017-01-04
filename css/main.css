@@ -1,33 +1,30 @@
-
 h1 {
     font-family: 'Ubuntu', sans-serif;
 }
-
-.score.template{
-  display:none;
+.score.template {
+    display: none;
 }
-.btn{
-  border: medium none;
-  color: #ffffff;
-  background-color: #008cba;
-  font-size: 16px;
-  padding: 12px 16px;
-  text-align: center;
-  text-decoration: none;
-  transition-duration: 0.4s;
-  font-family: 'Ubuntu', sans-serif;
-  text-transform : uppercase;
-  cursor : pointer;
+.btn {
+    border: medium none;
+    color: #ffffff;
+    background-color: #008cba;
+    font-size: 16px;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 .btn-danger {
-  background-color: #f44336;
+    background-color: #f44336;
 }
-.btn-success{
-  background-color: #4CAF50;
+.btn-success {
+    background-color: #4CAF50;
 }
-.counter
-{
-  opacity: 0.01;
+.counter {
+    opacity: 0.01;
 }
 .counter.show {
     opacity: 1;
@@ -36,10 +33,9 @@ h1 {
     -moz-transition: opacity 0.3s ease-out;
     -webkit-transition: opacity 0.3s ease-out;
 }
-
 .add-form-input {
-    width : 247px;
+    width: 247px;
 }
-.value{
-  padding: 13px 14px;
+.value {
+    padding: 13px 14px;
 }
