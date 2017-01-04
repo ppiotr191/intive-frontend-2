@@ -9,7 +9,6 @@ class ScoreCounter {
         if (startValueString.length > parseInt(amountDigits)) {
             startValueString = startValueString.substr(0, amountDigits);
             this.counterValue = parseInt(startValueString);
-
         } else {
             this.counterValue = startValue;
         }
